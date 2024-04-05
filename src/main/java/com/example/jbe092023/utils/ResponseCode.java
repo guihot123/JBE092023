@@ -24,7 +24,8 @@ public enum ResponseCode {
 		this.message = message;
 	}
 	ResponseCode(String string, String string2) {
-
+		this.code=string;
+		this.message=string2;
 	}
 	
 }

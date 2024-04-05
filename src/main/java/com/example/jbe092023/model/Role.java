@@ -30,5 +30,39 @@ public class Role {
 	
 	@OneToMany(mappedBy = "roles")
 	private List<UserRole> userroles = new ArrayList<UserRole>();
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public List<UserRole> getUserroles() {
+		return userroles;
+	}
+
+	public void setUserroles(List<UserRole> userroles) {
+		this.userroles = userroles;
+	}
+	
+	
 	
 }
